@@ -1,0 +1,42 @@
+<div class="container">
+  <div class="row">
+    <div class="col">
+      <h1 class="text-main">Rx Js Maps</h1>
+    </div>
+    <div class="col-1">
+      <button id="btnReset" class="btn btn-warning mx-2" (click)="init()">Reset</button>
+    </div>
+  </div>
+</div>
+<hr/>
+<div class="container">
+  <div class="row">
+    <div class="col">
+      <div class="text-main p-1">SwitchMap<br><i>Outer stream priority</i></div>
+      <ul class="list-group" *ngIf="httpUser">
+        <li class="list-group-item my-1" (click)="saveCanvas()">
+          {{httpUser.name}} from {{httpUser.address.city}}
+        </li>
+      </ul>
+      <canvas width="300" height="300" style="border: 1px solid #eee"></canvas>
+    </div>
+    <div class="col">
+      <div class="text-main p-1">ExhaustMap<br/><i>Inner stream priority</i></div>
+      <ul class="list-group" *ngFor="let value of exhaustMapValues">
+        <li class="list-group-item my-1">{{value}}</li>
+      </ul>
+    </div>
+    <div class="col">
+      <div class="text-main p-1">MergeMap<br/><i>No stream priority No Order</i></div>
+      <ul class="list-group" *ngFor="let value of mergeMapValues">
+        <li class="list-group-item my-1">{{value}}</li>
+      </ul>
+    </div>
+    <div class="col">
+      <div class="text-main p-1">ConcatMap<br/><i>No stream priority With Order</i></div>
+      <ul class="list-group" *ngFor="let value of concatMapValues">
+        <li class="list-group-item my-1">{{value}}</li>
+      </ul>
+    </div>
+  </div>
+</div>

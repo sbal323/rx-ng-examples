@@ -1,0 +1,26 @@
+<section class="py-2">
+  <div class="container">
+    <ul class="nav nav-tabs" id="myTab" role="tablist">
+      <li class="nav-item" role="presentation">
+        <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home" type="button" role="tab" aria-controls="home" aria-selected="true">Creators</button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#operators" type="button" role="tab" aria-controls="operators" aria-selected="false">Operators</button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link" id="maps-tab" data-bs-toggle="tab" data-bs-target="#maps" type="button" role="tab" aria-controls="maps" aria-selected="false">Maps</button>
+      </li>
+    </ul>
+    <div class="tab-content" id="myTabContent">
+      <div class="tab-pane fade show active p-2" id="home" role="tabpanel" aria-labelledby="home-tab">
+        <app-creators></app-creators>
+      </div>
+      <div class="tab-pane fade p-2" id="operators" role="tabpanel" aria-labelledby="operators-tab">
+        <app-operators></app-operators>
+      </div>
+      <div class="tab-pane fade p-2" id="maps" role="tabpanel" aria-labelledby="maps-tab">
+        <app-maps></app-maps>
+      </div>
+    </div>
+  </div>
+</section>

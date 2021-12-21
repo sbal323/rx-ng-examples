@@ -1,0 +1,57 @@
+<div class="container">
+  <div class="row">
+    <div class="col">
+      <h1 class="text-main">Rx Js Creators</h1>
+    </div>
+    <div class="col-2">
+      <ul class="list-group">
+        <li class="list-group-item my-1">{{clock}}</li>
+      </ul>
+    </div>
+    <div class="col-2">
+      <button id="btnTest" class="btn btn-primary" #buttonElem>Click me</button>
+      <button id="btnReset" class="btn btn-warning mx-2" (click)="init()">Reset</button>
+    </div>
+  </div>
+</div>
+<hr/>
+<div class="container">
+  <div class="row">
+    <div class="col">
+      <div class="text-main p-1">FromFetch</div>
+      <ul class="list-group" *ngFor="let user of users">
+        <li class="list-group-item my-1">{{user.name}}</li>
+      </ul>
+    </div>
+    <div class="col">
+      <div class="text-main p-1">Of</div>
+      <ul class="list-group" *ngFor="let number of numbers">
+        <li class="list-group-item my-1">{{number}}</li>
+      </ul>
+    </div>
+    <div class="col">
+      <div class="text-main p-1">From</div>
+      <ul class="list-group" *ngFor="let fruit of fruits">
+        <li class="list-group-item my-1">{{fruit}}</li>
+      </ul>
+    </div>
+    <div class="col">
+      <div class="text-main p-1">FromEvent</div>
+      <ul class="list-group" *ngFor="let event of events">
+        <li class="list-group-item my-1">{{event}}</li>
+      </ul>
+    </div>
+    <div class="col">
+      <div class="text-main p-1">Interval</div>
+      <ul class="list-group" *ngFor="let number of numbers2">
+        <li class="list-group-item my-1">{{number}}</li>
+      </ul>
+    </div>
+    <div class="col">
+      <div class="text-main p-1">Range</div>
+      <ul class="list-group" *ngFor="let number of range">
+        <li class="list-group-item my-1">{{number}}</li>
+      </ul>
+    </div>
+  </div>
+</div>

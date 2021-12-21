@@ -1,16 +1,26 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
-import { AppComponent } from './app.component';
+import { MainComponent } from './components/main/main.component';
+import { TestComponent } from './components/test/test.component';
+import { CreatorsComponent } from './components/creators/creators.component';
+import { OperatorsComponent } from './components/operators/operators.component';
+import { MapsComponent } from './components/maps/maps.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
-    AppComponent
+    MainComponent,
+    TestComponent,
+    CreatorsComponent,
+    OperatorsComponent,
+    MapsComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    HttpClientModule
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [MainComponent]
 })
 export class AppModule { }

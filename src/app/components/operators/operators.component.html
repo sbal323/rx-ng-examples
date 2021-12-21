@@ -1,0 +1,43 @@
+<div class="container">
+  <div class="row">
+    <div class="col">
+      <h1 class="text-main">Rx Js Operators</h1>
+    </div>
+    <div class="col-1">
+      <button id="btnReset" class="btn btn-warning mx-2" (click)="init()">Reset</button>
+    </div>
+  </div>
+</div>
+<hr/>
+<div class="container">
+  <div class="row">
+    <div class="col">
+      <div class="text-main p-1">Map & Filter</div>
+      <ul class="list-group" *ngFor="let value of mapFilterValues">
+        <li class="list-group-item my-1">{{value}}</li>
+      </ul>
+    </div>
+    <div class="col">
+      <div class="text-main p-1">Pluck</div>
+      <ul class="list-group" *ngFor="let value of pluckValues">
+        <li class="list-group-item my-1">{{value}}</li>
+      </ul>
+    </div>
+    <div class="col">
+      <div class="text-main p-1">Tap</div>
+      <ul class="list-group" *ngFor="let value of tapValues">
+        <li class="list-group-item my-1">{{value}}</li>
+      </ul>
+    </div>
+    <div class="col">
+      <div class="text-main p-1">Reduce</div>
+      <ul class="list-group">
+        <li class="list-group-item my-1">{{reduceValue}}</li>
+      </ul>
+      <div class="text-main p-1">Scan</div>
+      <ul class="list-group" *ngFor="let value of scanValues">
+        <li class="list-group-item my-1">{{value}}</li>
+      </ul>
+    </div>
+  </div>
+</div>

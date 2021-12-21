@@ -1,0 +1,57 @@
+
+
+<div class="container">
+  <div class="row">
+    <div class="col">
+      <h1 class="text-main">Rx Js Creators</h1>
+    </div>
+    <div class="col-2">
+      <button id="btnTest" class="btn btn-primary" #buttonElem>Click me</button>
+    </div>
+  </div>
+</div>
+
+<div class="container">
+  <div class="row">
+    <div class="col">
+      <ul class="list-group" *ngFor="let user of users">
+        <li class="list-group-item">{{user.name}}</li>
+      </ul>
+    </div>
+    <div class="col">
+      <ul class="list-group" *ngFor="let number of numbers">
+        <li class="list-group-item">{{number}}</li>
+      </ul>
+    </div>
+    <div class="col">
+      <ul class="list-group" *ngFor="let fruit of fruits">
+        <li class="list-group-item">{{fruit}}</li>
+      </ul>
+    </div>
+    <div class="col">
+      <ul class="list-group" *ngFor="let event of events">
+        <li class="list-group-item">{{event}}</li>
+      </ul>
+    </div>
+  </div>
+  <hr/>
+  <div class="row">
+    <div class="col">
+      <ul class="list-group" *ngFor="let number of numbers2">
+        <li class="list-group-item">{{number}}</li>
+      </ul>
+    </div>
+    <div class="col">
+      <ul class="list-group" *ngFor="let number of range">
+        <li class="list-group-item">{{number}}</li>
+      </ul>
+    </div>
+    <div class="col">
+      <ul class="list-group">
+        <li class="list-group-item">{{clock}}</li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+
