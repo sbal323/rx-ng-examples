@@ -10,6 +10,12 @@
       <li class="nav-item" role="presentation">
         <button class="nav-link" id="maps-tab" data-bs-toggle="tab" data-bs-target="#maps" type="button" role="tab" aria-controls="maps" aria-selected="false">Maps</button>
       </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link" id="subjects-tab" data-bs-toggle="tab" data-bs-target="#subjects" type="button" role="tab" aria-controls="subjects" aria-selected="false">Subjects</button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link" id="rate-tab" data-bs-toggle="tab" data-bs-target="#rate" type="button" role="tab" aria-controls="rate" aria-selected="false">Example</button>
+      </li>
     </ul>
     <div class="tab-content" id="myTabContent">
       <div class="tab-pane fade show active p-2" id="home" role="tabpanel" aria-labelledby="home-tab">
@@ -20,6 +26,12 @@
       </div>
       <div class="tab-pane fade p-2" id="maps" role="tabpanel" aria-labelledby="maps-tab">
         <app-maps></app-maps>
+      </div>
+      <div class="tab-pane fade p-2" id="subjects" role="tabpanel" aria-labelledby="subjects-tab">
+        <app-subjects></app-subjects>
+      </div>
+      <div class="tab-pane fade p-2" id="rate" role="tabpanel" aria-labelledby="rate-tab">
+        <app-rate></app-rate>
       </div>
     </div>
   </div>

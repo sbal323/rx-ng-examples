@@ -7,6 +7,8 @@ import { CreatorsComponent } from './components/creators/creators.component';
 import { OperatorsComponent } from './components/operators/operators.component';
 import { MapsComponent } from './components/maps/maps.component';
 import { HttpClientModule } from '@angular/common/http';
+import { SubjectsComponent } from './components/subjects/subjects.component';
+import { RateComponent } from './components/rate/rate.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +16,9 @@ import { HttpClientModule } from '@angular/common/http';
     TestComponent,
     CreatorsComponent,
     OperatorsComponent,
-    MapsComponent
+    MapsComponent,
+    SubjectsComponent,
+    RateComponent
   ],
   imports: [
     BrowserModule,

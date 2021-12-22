@@ -1,0 +1,35 @@
+<div class="container">
+  <div class="row">
+    <div class="col">
+      <h1 class="text-main">Rx Js Subjects</h1>
+    </div>
+    <div class="col-1">
+      <button id="btnReset" class="btn btn-warning mx-2" (click)="init()">Reset</button>
+    </div>
+  </div>
+</div>
+<hr/>
+<div class="container">
+  <div class="row">
+    <div class="col">
+      <div class="text-main p-1">Subject</div>
+      <ul class="list-group" *ngFor="let value of subjectValues">
+        <li class="list-group-item my-1">
+          {{value}}
+        </li>
+      </ul>
+    </div>
+    <div class="col">
+      <div class="text-main p-1">Behaviour Subject</div>
+      <ul class="list-group" *ngFor="let value of behaviourValues">
+        <li class="list-group-item my-1">{{value}}</li>
+      </ul>
+    </div>
+    <div class="col">
+      <div class="text-main p-1">Replay Subject</div>
+      <ul class="list-group" *ngFor="let value of replayValues">
+        <li class="list-group-item my-1">{{value}}</li>
+      </ul>
+    </div>
+  </div>
+</div>

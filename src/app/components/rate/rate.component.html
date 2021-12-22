@@ -1,0 +1,45 @@
+<div class="container">
+  <div class="row">
+    <div class="col">
+      <h1 class="text-main">Rx Js Example</h1>
+    </div>
+    <div class="col-1">
+
+    </div>
+  </div>
+</div>
+<hr/>
+<div class="row">
+  <div class="col">
+    <div class="card" *ngIf="lastBtc>0">
+      <div class="card-header">
+        BTC/USD
+      </div>
+      <div class="card-body">
+        <h1 class="card-title text-danger text-center" *ngIf="!btcUp()"><i class="bi bi-caret-down-fill"></i> ${{currentBtc| number : '1.2'}}</h1>
+        <h1 class="card-title text-success text-center" *ngIf="btcUp()"><i class="bi bi-caret-up-fill"></i> ${{currentBtc| number : '1.2'}}</h1>
+        <div class="text-muted text-center">{{btcChange()| number : '1.2'}}%</div>
+      </div>
+    </div>
+  </div>
+  <div class="col">
+    <div class="text-center">
+      <h3 class="text-primary">E-currency</h3>
+      <h1 class="text-primary"><i class="bi bi-currency-exchange"></i></h1>
+      <h3 class="text-primary">exchange rate</h3>
+    </div>
+  </div>
+  <div class="col">
+    <div class="card" *ngIf="lastEth>0">
+      <div class="card-header">
+        ETH/USD
+      </div>
+      <div class="card-body">
+        <h1 class="card-title text-danger text-center" *ngIf="!ethUp()"><i class="bi bi-caret-down-fill"></i> ${{currentEth| number : '1.2'}}</h1>
+        <h1 class="card-title text-success text-center" *ngIf="ethUp()"><i class="bi bi-caret-up-fill"></i> ${{currentEth| number : '1.2'}}</h1>
+        <div class="text-muted text-center">{{ethChange()| number : '1.2'}}%</div>
+      </div>
+    </div>
+  </div>
+</div>
+
